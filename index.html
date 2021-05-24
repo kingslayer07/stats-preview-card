@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    html{
+      font-size: 14px;
+    }
+    
+    body{
+      background-color: hsl(233, 47%, 7%);
+      padding: 6vh 3vw;
+    }
+    .main-card{
+      background-color: hsl(244, 38%, 16%);
+      border-radius: 5px;
+      /* padding: 0 4vw; */
+      overflow: auto;
+      /* height: 30vh; */
+      /* margin-left: 10rem; */
+      /* height: 400px; */
+      /* display: flex; */
+    }
+    .image{
+      background:url("images/mobile.jpg") no-repeat 0 0 hsl(277, 64%, 61%);
+      height: 30vh;
+      width: 100%;
+      background-size: cover;
+      background-blend-mode: multiply;
+      background-repeat: no-repeat;
+      background-color: hsl(277, 64%, 61%);
+      /* width: 100%; */
+      /* object-fit: cover; */
+          /* background-position: 50% 50%; */
+
+
+    }
+    
+    .text-card{
+      padding:5vh  9vw;
+      text-align: center;
+      /* width: 50%; */
+      /* align-items: center; */
+      /* padding-left: 4rem;
+      padding-top: 4rem; */
+    }
+    .big-text{
+      font-family: 'Inter', sans-serif;
+      color: hsl(0, 0%, 100%);
+      text-align: center;
+      font-weight: 700;
+      font-size: large;
+      margin-bottom: 1vh;
+    }
+    li,
+    p{
+      font-family: 'Lexend Deca', sans-serif;
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+    li{
+      text-transform:uppercase;
+    }
+    ul{
+      list-style-type: none;
+      padding-inline-start: 0;
+      padding-top: 5vh;
+    }
+    span{
+      color: hsl(277, 64%, 61%);
+    }
+    
+    li{
+      padding-bottom: 4vh;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main-card">
+    <div class="image">
+      <!-- <img src="images/mobile.jpg" alt="office image"> -->
+    </div>
+
+    <div class="text-card">
+      <div>
+        <h2 class="big-text">
+          Get <span>insights</span> that help your business grow.
+      </h2>
+        
+      </div> 
+      
+<p>
+  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+  experience, and overall efficiency.
+</p>
+
+
+<ul>
+  <li><div class="big-text">10k+</div>  companies</li>
+  <li><div class="big-text"> 314</div>  templates</li>
+  <li><div class="big-text">12m+</div>  queries</li>
+</ul>
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Your Name Here</a>.
+</div>
+</div>
+</div>
+</body>
+</html>
