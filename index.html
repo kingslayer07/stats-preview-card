@@ -21,6 +21,8 @@
       background-color: hsl(233, 47%, 7%);
       padding: 6vh 3vw;
     }
+      
+    
     .main-card{
       background-color: hsl(244, 38%, 16%);
       border-radius: 5px;
@@ -58,8 +60,8 @@
       font-family: 'Inter', sans-serif;
       color: hsl(0, 0%, 100%);
       text-align: center;
-      font-weight: 700;
-      font-size: large;
+      font-weight: 400;
+      font-size: 2rem;
       margin-bottom: 1vh;
     }
     li,
@@ -84,6 +86,59 @@
     }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    @media only screen and (min-width: 500px){
+        
+        body{
+          font-size: 16px;
+        }
+        .main-card{
+          display: flex;
+          
+          margin: 6rem 6rem ;
+          height: min(60%, 500px);
+          max-height: 430px;
+          overflow: auto;
+
+
+        }
+        .main-card > *{
+          flex-basis: 100%;
+          height: min(70vh,400px);
+          overflow: auto;
+          box-sizing: border-box;
+          /* padding-right: 5vw; */
+        }
+        .text-card{
+          order: 1;
+          width: 50%;
+          box-sizing: border-box;
+          padding:7vh 15vw 0 4vw;
+          /* padding: 0; */
+          text-align: left;
+        }
+        .image{
+          background:url("images/desktop.jpg") no-repeat 0 0 hsl(277, 64%, 61%);
+          width: 100%;
+          order: 2;
+          /* height: 100; */
+          /* padding-right: 10vw; */
+        }
+        .big-text{
+          text-align: left;
+          font-size: 2.3rem;
+          /* font-stretch: expanded; */
+          font-weight: 700;
+          /* padding-right: 7vw; */
+        }
+        li div{
+          font-size: 1.8rem;
+          color: white;
+        }
+        ul{
+          display: flex;
+          gap: 2vw;
+        }
+    }
   </style>
 </head>
 <body>
@@ -107,14 +162,14 @@
 
 
 <ul>
-  <li><div class="big-text">10k+</div>  companies</li>
-  <li><div class="big-text"> 314</div>  templates</li>
-  <li><div class="big-text">12m+</div>  queries</li>
-</ul>
+  <li><div class="stat">10k+</div>  companies</li>
+  <li><div class="stat"> 314</div>  templates</li>
+  <li><div class="stat">12m+</div>  queries</li>
 
+</ul>
 <div class="attribution">
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-  Coded by <a href="#">Your Name Here</a>.
+  Coded by <a href="#">kingslayer07</a>.
 </div>
 </div>
 </div>
